@@ -1,0 +1,24 @@
+<div class="item">
+   <a class="item__img-wrap" href=""><img class="item__img" src="./img/@@img" alt="product" /></a>
+   <div class="item__desc">
+     <a href=""><h4 class="item__title">@@name</h4></a>
+     <ul class="item__features">
+       <li>
+         <span>Product: <b>@@product</b></span>
+       </li>
+       @@if (size.be == true) {
+         <li>
+            <span>Size: <b>@@size.value</b></span>
+         </li>
+      }
+     </ul>
+     <div class="item__price">@@price</div>
+     @@if (gift.be === true) {
+      <div class="item__gift-wrap">
+         <div class="item__gift">
+            <img src="./img/gift.svg" alt="gift" /> <span>@@gift.title</span>
+         </div>
+      </div>
+      }
+   </div>
+ </div>
